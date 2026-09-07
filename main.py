@@ -63,7 +63,8 @@ def get_weather_by_coordinates(lat: float, lon: float):
 
         weather_data = response.json()
 
-    except requests.RequestException:
+    except requests.RequestException as e:
+        print("OPEN-METEO ERROR:", repr(e))
         raise HTTPException(
             status_code=503,
             detail="Unable to connect to weather service"
@@ -118,7 +119,8 @@ def get_weather(city: str):
 
         data = response.json()
 
-    except requests.RequestException:
+    except requests.RequestException as e:
+        print("GEOCODING ERROR:", repr(e))
         raise HTTPException(
             status_code=503,
             detail="Unable to connect to geocoding service"
