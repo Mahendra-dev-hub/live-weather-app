@@ -5,7 +5,7 @@ import {
   Thermometer, Wind
 } from "lucide-react";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://live-weather-app-7leg.onrender.com";
 
 const hourly = [
   ["Now", "sun", 29], ["13:00", "partly", 30], ["14:00", "partly", 31],
