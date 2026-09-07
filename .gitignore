@@ -1,0 +1,10 @@
+weather/
+__pycache__/
+*.pyc
+.env
+
+weather-react-app/node_modules/
+weather-react-app/dist/
+weather-react-app/build/
+
+.vscode/
