@@ -1,0 +1,17 @@
+# Python virtual environment
+weather/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# React
+weather-react-app/node_modules/
+weather-react-app/dist/
+weather-react-app/build/
+
+# VS Code
+.vscode/
